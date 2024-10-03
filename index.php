@@ -26,7 +26,8 @@
             </div>
             <div class="col-md-10" style="padding-top: 50px;">
             <!-- Conteúdo //-->
-                <h2>Página Inicial</h2>
+            <div class="card-header">Inicio</div>
+                <div class="card-body">
                 <?php
                     include 'includes/busca.php';
                 ?>
@@ -69,14 +70,14 @@
                         'data_postagem DESC'
                     );
                 ?>
-                <div>
+                <div class="mt-3">
                     <div class="list-group">
                         <?php 
                             foreach($posts as $post):
                                 $data = date_create($post['data_postagem']);
                                 $data = date_format($data, 'd/m/Y H:i:s');
                         ?>
-                        <a href="post_detalhe.php?post=<?php echo $post['id']?>" class="list-group-ite list-group-item-action">
+                        <a href="post_detalhe.php?post=<?php echo $post['id']?>" class="list-group-item list-group-item-action">
                             <strong><?php echo $post['titulo']?></strong>
                             [<?php echo $post['nome']?>]
                             <span class="badge badge-dark"><?php echo $data?></span>
@@ -84,6 +85,7 @@
                         <?php endforeach; ?>
                     </div>
                 </div>
+            </div>
             </div>
         </div>
         <div class="row">

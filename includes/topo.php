@@ -2,7 +2,7 @@
     session_start();
 ?>
 
-<div class="card">
+<div class="card mb-3 mt-3">
     <div class="card-header">
         <h1>Projeto Blog em PHP super foda | Matheus</h1>
     </div>

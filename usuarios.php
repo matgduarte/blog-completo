@@ -25,7 +25,8 @@
                 <?php include 'includes/menu.php'; ?>
             </div>
             <div class="col-md-10" style="padding-top: 50px;">
-                <h2>Usuário</h2>
+            <div class="card-header">Usuarios</div>
+                <div class="card-body">
                 <?php include 'includes/busca.php' ?>
                 <?php
                     require_once 'includes/funcoes.php';
@@ -58,7 +59,7 @@
                         'data_criacao DESC, nome ASC'
                     );
                 ?>
-                <table class="table table-bordered table-hover table-striped table-responsive{-sm|-md|-lg|-xl}">
+                <table class="mt-3 table table-bordered table-hover table-striped table-responsive{-sm|-md|-lg|-xl}">
                     <thead>
                         <tr>
                             <td>Nome</td>
@@ -84,6 +85,7 @@
                         <?php endforeach; ?>
                     </tbody>
                 </table>
+            </div>
             </div>
         </div>
         <div class="row">
