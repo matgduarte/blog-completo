@@ -39,7 +39,8 @@
                             $entidade = $retorno[0];
                         }
                     ?>
-                    <h2>Usuário</h2>
+                    <div class="card-header">Usuarios</div>
+                    <div class="card-body">
                     <form method="post" action="core/usuario_repositorio.php">
                         <input type="hidden" name="acao"
                             value="<?php echo empty($id) ? 'insert' : 'update' ?>">
@@ -69,6 +70,7 @@
                                 type="submit">Salvar</button>
                         </div>
                     </form>
+                    </div>
                 </div>
             </div>
             <div class="row">
